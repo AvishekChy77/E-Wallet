@@ -1,17 +1,23 @@
 document.getElementById('btn-depo').addEventListener('click', function (){
     const depositField = document.getElementById('depo');
-    const newdeposit = depositField.value;
+    const newdeposit = parseFloat(depositField.value);
+    
+    depositField.value = ''
+
+    if(isNaN(newdeposit)){
+        alert('please enter an amount');
+        return
+    }
 
     const depositTotalElement =document.getElementById('deposit-total');
     const previousdepositTotal = depositTotalElement.innerText;
-    const currentdepositTotal = parseFloat(previousdepositTotal) + parseFloat(newdeposit);
+    const currentdepositTotal = parseFloat(previousdepositTotal) + newdeposit;
     depositTotalElement.innerText = currentdepositTotal;
 
-    depositField.value = ''
 
     const balanceTotalElement = document.getElementById('balance-total');
     const previousBalanceTotal = parseFloat(balanceTotalElement.innerText);
-    const currentBalanceTotal = parseFloat(newdeposit) + previousBalanceTotal;
+    const currentBalanceTotal = newdeposit + previousBalanceTotal;
     balanceTotalElement.innerText = currentBalanceTotal;
 
 })
