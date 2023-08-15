@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Wallet</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-medium text-center my-6">
+        Welcome to your
+        <span class="font-bold text-orange-800">Wallet!</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-blue-300 w-2/3 rounded-lg mx-auto mt-10 px-14 py-16">
+        <h3 class="text-4xl mb-6 font-medium">Please Login</h3>
+        <form>
+          <input
+            class="w-1/2 block mb-4 p-2"
+            type="email"
+            name=""
+            id="mail"
+            required
+            placeholder="type your mail address..."
+          />
+          <input
+            class="w-1/2 block mb-4 p-2"
+            type="password"
+            name=""
+            id="pass"
+            placeholder="enter your Password..."
+            required
+          />
+          <button
+            id="btn"
+            class="bg-orange-500 hover:bg-blue-500 rounded-md text-white py-2 px-3"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
