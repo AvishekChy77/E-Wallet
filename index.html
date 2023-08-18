@@ -6,25 +6,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Wallet</title>
   </head>
-  <body>
+  <body class="bg-gradient-to-t from-stone-400 to-stone-100 bg-fixed">
     <header>
-      <h1 class="text-5xl font-medium text-center my-6">
+      <h1 class="text-4xl md:text-5xl font-medium text-center mt-4 md:mt-6">
         Welcome to your
         <span class="font-bold text-orange-800">Wallet!</span>
       </h1>
     </header>
     <main>
-      <section class="bg-blue-300 w-2/3 rounded-lg mx-auto mt-10 px-14 py-16">
+      <section
+        class="bg-blue-300 w-3/4 lg:w-2/3 rounded-lg mx-auto mt-10 px-5 md:px-14 py-16"
+      >
         <h3 class="text-4xl mb-6 font-medium">Please Login</h3>
         <input
-          class="w-1/2 block mb-4 p-2"
+          class="w-3/4 md:w-1/2 block mb-4 p-2"
           type="email"
           name=""
           id="mail"
           placeholder="type your mail address..."
         />
         <input
-          class="w-1/2 block mb-4 p-2"
+          class="w-3/4 md:w-1/2 block mb-4 p-2"
           type="password"
           name=""
           id="pass"
